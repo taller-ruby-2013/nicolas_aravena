@@ -27,13 +27,4 @@
 <% end %>
 
 <h2>Comentarios</h2>
-<% @post.comments.each do |comment| %>
-<p>
-<strong>Commenter:</strong>
-<%= comment.commenter %>
-</p>
-<p>
-<strong>Comment:</strong>
-<%= comment.body %>
-</p>
-<% end %>
+<%= render @post.comments %>

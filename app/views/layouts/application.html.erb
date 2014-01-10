@@ -7,17 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="container-narrow">
+<div class="container">
   <div class="masthead">
     <%= render 'layouts/user_header' %>
-    <h3 class="muted"><%= link_to "Mi Blog", root_path %></h3>
-    <h5 class="muted">Un entretenido taller</h5>
+    <h3 class="muted"><%= link_to "Blog de Nicolás Aravena", root_path %></h3>
+    <h5 class="muted">Taller de ROR</h5>
   </div>
   <hr />
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
   <%= yield %>
+  <footer>
+    Taller de Ruby on Rails 2013-2014
+  </footer>
 </div>
-:D #Rhodium2013 
 </body>
 </html>

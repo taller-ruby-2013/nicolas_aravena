@@ -1,5 +1,16 @@
-<h1>Mi superblog en rails</h1>
-<p>Está entero boniiito!</p>
+<div>
+	<% @posts.each do |post| %>
+		<h1><%= link_to post.title, post_path(post) %> <small><%= l post.created_at, :format => :short %></small></h1>
+		<div class="well well-lg">
+			<%= post.text %>
+		</div>	
+	<% end %>
 
-<%= link_to "Mi Blog", controller: "posts" %>
+</div>
+<div>
+	<br><br>
+	<p>
+	<span class="label label-warning"><%= link_to "Editar Posts", controller: "posts" , :class=>'color: white' %></span>
+	</p>
+</div>
 

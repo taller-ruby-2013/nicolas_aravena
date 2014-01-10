@@ -11,15 +11,15 @@
     <% end %>
 
     <p>
-        <%= f.label :title %><br>
-        <%= f.text_field :title %>
+        <%= f.label "Titulo" %><br>
+        <%= f.text_field :title, :class => 'form-control', :placeholder => 'Escriba el Titulo' %>
     </p>
     <p>
-        <%= f.label :text %><br>
-        <%= f.text_area :text %>
+        <%= f.label "Texto" %><br>
+        <%= f.text_area :text , :class => 'form-control', :placeholder => 'Escriba el texto de su post'  %>
     </p>
     <p>
-    <%= f.submit %>
+    <%= f.submit "Editar" , :class => 'btn btn-default'%>
     </p>
 <% end %>
 

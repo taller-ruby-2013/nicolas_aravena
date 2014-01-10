@@ -1,5 +1,7 @@
 <ul class="nav nav-pills pull-right">
   <% if user_signed_in? %>
+    <li><%= link_to "Editar Posts",  controller: "posts"  %></li>
+    <li><%= link_to 'Nuevo post', new_post_path %></li>
     <li><%= link_to "Salir", destroy_user_session_path, :method => :delete %></li>
   <% else %>
     <li><%= link_to "Ingresar", new_user_session_path %></li>
